@@ -1,8 +1,8 @@
-    const allowedDomains = ["https://www.3rbcafee.com", "laky-saydatii.blogspot.com"]; // Replace with your allowed domains
+   const allowedDomains = ["3rbcafee.com", "laky-saydatii.blogspot.com"]; // Replace with your allowed domains
 
-    const currentDomain = window.location.hostname;
+    const currentDomain = document.referrer || window.location.hostname;
 
-    if (!allowedDomains.includes(currentDomain)) {
+    if (!allowedDomains.includes(new URL(currentDomain).hostname)) {
       console.error("Access denied: Unauthorized domain");
       document.getElementById("output").innerHTML = "Access denied.";
     } else {
