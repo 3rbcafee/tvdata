@@ -1,7 +1,7 @@
 (function() {
   var allowedSites = [
-    "https://www.arab-stream.live/",
-    "https://www.showfha.online"
+ "https://www.3rbcafee.com/",
+    "https://laky-saydatii.blogspot.com/"
   ];
 
   var currentPage = window.location.href;
@@ -11,7 +11,7 @@
   });
 
   // الصفحة المستثناة
-  var excludedPage = "https://play.arab-stream.live/2024/08/home.html";
+  var excludedPage = "https://www.google.com";
   if (currentPage === excludedPage || isAllowed) {
     async function fetchData(channelID) {
       try {
