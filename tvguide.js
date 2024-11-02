@@ -1,4 +1,4 @@
-   const allowedDomains = ["3rbcafee.com", "laky-saydatii.blogspot.com"]; // Replace with your allowed domains
+    const allowedDomains = ["https://www.3rbcafee.com", "https://laky-saydatii.blogspot.com"]; // Replace with your allowed domains
 
     const currentDomain = document.referrer || window.location.hostname;
 
